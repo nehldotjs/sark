@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Screens from "./Screens";
 
 function App() {
   return (
-    <div>
-      <h1>SARK</h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Screens />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
