@@ -1,0 +1,87 @@
+.getStarted-wrapper {
+    background-color: rgb(243, 243, 243);
+}
+
+.borderCurve {
+    display: flex;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.borderCurve img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    object-fit: fill;
+    transform: scale(1.1, -1.1);
+}
+
+.gs-contentWrapper {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 10% 0px;
+    gap: 40px;
+    height: auto;
+}
+
+.gs-box1,
+.gs-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 20px;
+    height: 100%;
+}
+
+.gs-box2 {
+
+    border: 1px solid lightgray;
+    background-color: #fff;
+}
+
+.gs-box1 {
+    gap: 15px;
+    flex: 70%;
+}
+
+.gs-box1 h1 {
+    width: 100%;
+    display: flex;
+    font-family: Space Grotesk, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gs-box1 p {
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+}
+
+.gs-box1 button {
+    width: auto;
+    padding: 20px;
+    display: flex;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.gs-box2 .boxHeader {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.gs-box2 .boxHeader h3 {
+    display: flex;
+    font-family: Space Grotesk, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
