@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sark/static/css/main.f5cdee4f.css",
+    "main.js": "/sark/static/js/main.37bc19c4.js",
+    "static/media/Illustration3.png": "/sark/static/media/Illustration3.5e1d844169b27a6bf8b6.png",
+    "static/media/Illustration.png": "/sark/static/media/Illustration.98d5af2aff78b1ec7667.png",
+    "static/media/Illustration2.png": "/sark/static/media/Illustration2.b9140fc0f8a1ed142830.png",
+    "index.html": "/sark/index.html",
+    "main.f5cdee4f.css.map": "/sark/static/css/main.f5cdee4f.css.map",
+    "main.37bc19c4.js.map": "/sark/static/js/main.37bc19c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5cdee4f.css",
+    "static/js/main.37bc19c4.js"
+  ]
+}
