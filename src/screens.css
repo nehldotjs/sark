@@ -1,8 +1,16 @@
 .ScreenWrapper {
-    padding: 0px;
-    margin: 0px;
+
     display: flex;
     flex-direction: column;
- 
 
- }
+
+}
+
+@media screen and (max-width:900px) {
+    .ScreenWrapper {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+}

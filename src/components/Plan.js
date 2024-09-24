@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/plan.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Plan() {
   const planCardDetails = [
     {
@@ -24,6 +27,18 @@ function Plan() {
       period: "Year"
     }
   ];
+
+    useEffect(() => {
+      AOS.init({
+        offset: 100,
+        delay: 100,
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false
+      });
+      AOS.refresh();
+    }, []);
   return (
     <div className="plan-Wrapper">
       <h1>
@@ -34,7 +49,7 @@ function Plan() {
         {planCardDetails.map((x) => {
           const { id, amount, less, period, lessPeriod } = x;
           return (
-            <div key={id} className="p-card-main">
+            <div key={id} className="p-card-main" data-aos="zoom-in-up">
               <div className="p-card-writeup">
                 <p>1 {period}</p>
                 <h1>${amount}</h1>

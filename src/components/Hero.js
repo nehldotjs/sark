@@ -9,7 +9,8 @@ function Hero() {
       <div className="hero-main">
         <div className="illustrationWrapper">
           <img src={illustration} alt="" className="illustration" />
-        </div>{" "}
+        </div>
+
         <div className="heroContext ">
           <p className="hero-header">Ensuring maximum security</p>
           <h1>Protect all your data with strong security access</h1>
@@ -22,6 +23,7 @@ function Hero() {
           </button>
         </div>
       </div>
+
       <div className="hero-vector-line">
         <img src={divider} alt="" className="divider" />
         <img src={vectorLine} alt="" className="vectorLine" />

@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/card.css";
 
 import icon1 from "../assets/icon1.png";
 import icon2 from "../assets/icon2.png";
 import icon3 from "../assets/icon3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Cards() {
+ useEffect(() => {
+   AOS.init({
+     offset: 100,
+     delay: 100,
+     duration: 1000,
+     easing: "ease-in-out",
+     once: true,
+     mirror: false
+   });
+   AOS.refresh();
+ }, []);
+
   const cardArr = [
     {
       id: 1,
@@ -34,7 +48,7 @@ function Cards() {
       {cardArr.map((arr) => {
         const { id, icon, header, writeUp } = arr;
         return (
-          <div className="card" key={id}>
+          <div className="card" key={id} data-aos="zoom-in-up">
             <div className="cardIcon">
               <img src={icon} alt="" />
             </div>

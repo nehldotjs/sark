@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/dataEx.css";
 
 import borderCurve from "../assets/Divider.png";
@@ -6,8 +6,22 @@ import illustration from "../assets/Illustration3.png";
 
 import slack from "../assets/slack.png";
 import trivago from "../assets/trivago.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function DataExchange() {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      delay: 100,
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+    AOS.refresh();
+  }, []);
+
   const rating = 5;
   return (
     <div className="dataExWrapper">
@@ -15,7 +29,7 @@ function DataExchange() {
         <img src={borderCurve} alt="" />
       </div>
       <div className="dataEx-content1Wrapper">
-        <div className="de-content1">
+        <div className="de-content1" data-aos="zoom-in-up">
           <div className="de-illustrationWrapper">
             <img src={illustration} alt="" />
           </div>
@@ -30,8 +44,8 @@ function DataExchange() {
       </div>
 
       <div className="dataEx-content2Wrapper">
-        <div className="de-content2">
-          <h1>Trusted by 1200+ world class businesses</h1>
+        <div className="de-content2" data-aos="zoom-in-up">
+          <h1 data-aos="zoom-in-up">Trusted by 1200+ world class businesses</h1>
           <div className="de-con-1">
             <div className="de-crd">
               <div>

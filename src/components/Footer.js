@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/footer.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+ 
+
 function Footer() {
+
+     useEffect(() => {
+       AOS.init({
+         offset: 100,
+         delay: 100,
+         duration: 1000,
+         easing: "ease-in-out",
+         once: true,
+         mirror: false
+       });
+       AOS.refresh();
+     }, []);
+
+
   const footerData = [
     {
       id: 1,
@@ -36,29 +54,26 @@ function Footer() {
         "delivery details",
         "terms and condition",
         "privacy policy"
-      ] 
+      ]
     }
   ];
+
   return (
     <div className="footer-wrapper">
       <div className="footerLinks-wrapper">
-        {/* ___________________________________________ */}
-
         {footerData.map((x) => {
           const { id, header, link } = x;
           return (
-            <div className="f-link-sections" key={id}>
+            <div className="f-link-sections" key={id} data-aos="zoom-in-up">
               <h4 className="f-links-header">{header}</h4>
               <div className="f-main-link-wrapper">
-                {link.map((y) => {
-                  return <p>{y}</p>;
+                {link.map((y,index) => {
+                  return <p key={index}>{y}</p>;
                 })}
               </div>
             </div>
           );
         })}
-
-        {/* ___________________________________________ */}
       </div>
       <hr />
       <div className="sub-footer">

@@ -20,7 +20,7 @@ function Screens() {
       <DataExchange />
       <Plan />
       <GetStarted />
-      <Footer />
+      <Footer /> 
     </div>
   );
 }
